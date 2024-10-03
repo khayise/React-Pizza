@@ -1,0 +1,16 @@
+@import '../../GlobalSyles/variables.scss';
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  padding: 15px;
+  min-width: 300px;
+
+  .submitBtn {
+    @include primaryBtn();
+    max-width: none;
+    width: 100%;
+  }
+}

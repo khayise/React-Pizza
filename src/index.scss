@@ -1,0 +1,35 @@
+@import './GlobalSyles/variables.scss';
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Rubik';
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+a,
+a:visited {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+
+.no-overflow {
+  overflow: hidden !important;
+  overscroll-behavior: contain;
+}
+
+.dont-show {
+  display: none;
+}

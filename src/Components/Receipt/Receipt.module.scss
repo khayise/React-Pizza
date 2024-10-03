@@ -1,0 +1,39 @@
+.container {
+  margin-top: 10px;
+  min-width: 300px;
+
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
+  padding: 15px;
+
+  h2 {
+    font-family: 'Roboto Mono';
+    font-size: 12px;
+    font-weight: normal;
+  }
+
+  span {
+    font-family: 'Roboto Mono';
+  }
+
+  .item {
+    font-size: 12px;
+  }
+
+  .extra {
+    font-size: 12px;
+  }
+
+  .total {
+    display: block;
+    text-align: right;
+    font-size: 12px;
+  }
+
+  .greetingsContrainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+}

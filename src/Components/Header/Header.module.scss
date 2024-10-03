@@ -1,0 +1,132 @@
+@import '../../GlobalSyles/variables.scss';
+
+.tooltipTrigger:hover .tooltip {
+  top: 120%;
+  visibility: visible;
+  opacity: 1;
+}
+
+.header {
+  padding: 10px 40px;
+  .innerContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+  }
+
+  .fakeBlock {
+    display: none;
+  }
+
+  .centerBlock {
+    position: relative;
+
+    cursor: pointer;
+    .top {
+      margin-bottom: 5px;
+    }
+    .bottom {
+      font-size: 14px;
+    }
+  }
+
+  .tooltip {
+    position: absolute;
+    top: 150%;
+    left: 1px;
+    height: 120px;
+    width: 150%;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    translate: -20%;
+    z-index: 1000;
+    padding: 20px;
+    border-radius: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.15s ease-in-out;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: -5%;
+      translate: -50% 0;
+      rotate: 45deg;
+      height: 25px;
+      width: 25px;
+      background-color: black;
+      border-radius: 3px;
+      z-index: 0;
+    }
+
+    .tooltipText {
+      font-weight: 300;
+      z-index: 1000;
+    }
+  }
+
+  .right {
+    .top {
+      margin-bottom: 5px;
+    }
+    .bottom {
+      font-size: 14px;
+      color: #868686;
+    }
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  .header {
+    .innerContainer {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      align-items: center;
+    }
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .centerBlock {
+    .top {
+      font-size: 14px;
+    }
+    .bottom {
+      font-size: 12px;
+    }
+  }
+
+  .right {
+    .top {
+      font-size: 14px;
+    }
+    .bottom {
+      font-size: 12px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    display: grid;
+    .innerContainer {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 15px;
+      column-gap: 10px;
+      align-items: stretch;
+      text-wrap: nowrap;
+    }
+
+    .tooltip {
+      display: none;
+    }
+
+    .headerLogo {
+      grid-column: span 2;
+      justify-self: center;
+      cursor: pointer;
+    }
+  }
+}

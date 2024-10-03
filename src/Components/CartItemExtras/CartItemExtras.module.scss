@@ -1,0 +1,26 @@
+.container {
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  flex: 1;
+  .extraContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transition: 300ms;
+
+    &:hover {
+      scale: 1.1;
+    }
+    button {
+      height: 16px;
+      width: 16px;
+    }
+
+    .title {
+      color: #868686;
+      font-size: 12px;
+    }
+  }
+}

@@ -1,0 +1,73 @@
+@import '../../GlobalSyles/variables.scss';
+.img {
+  margin-left: 40px;
+  height: 300px;
+  width: 300px;
+}
+
+.container {
+  @include flex-col();
+  box-sizing: border-box;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  border-radius: 0px 20px 20px 0px;
+
+  .title {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: left;
+  }
+
+  .additionalInfo {
+    color: #868686;
+    text-align: left;
+    font-size: 14px;
+  }
+
+  .toCartBtn {
+    @include primaryBtn();
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    align-self: center;
+  }
+
+  .frame {
+    height: 400px;
+    overflow: scroll;
+    padding: 10px;
+  }
+
+  .extrasContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    min-width: 300px;
+    gap: 10px;
+    row-gap: 10px;
+    margin-top: 10px;
+    padding: 15px;
+  }
+}
+
+@media screen and (min-width: 670px) and (max-width: 950px) {
+  .img {
+    margin-top: 20px;
+  }
+  .container {
+    .title {
+      text-align: center;
+    }
+
+    .extrasContainer {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 670px) {
+  .extrasContainer {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

@@ -1,0 +1,26 @@
+@import '../../GlobalSyles/variables.scss';
+
+.container {
+  opacity: 0;
+  margin-top: 40px;
+  .img {
+    height: 250px;
+    width: auto;
+  }
+  .link {
+    color: $vibrantOrangeColor;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .container {
+    padding: 15px;
+    .img {
+      height: 200px;
+      width: auto;
+    }
+  }
+}

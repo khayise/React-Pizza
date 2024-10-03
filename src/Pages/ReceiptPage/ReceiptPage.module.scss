@@ -1,0 +1,22 @@
+@import '../../GlobalSyles/variables.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .callToAction {
+    margin-top: 20px;
+  }
+
+  .link {
+    color: $vibrantOrangeColor;
+    transition: all 300ms;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

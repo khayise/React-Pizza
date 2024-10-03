@@ -1,0 +1,14 @@
+@import '../../GlobalSyles/variables.scss';
+.navBtn {
+  font-size: 14px;
+  margin-right: 30px;
+  transition: all 0.2s;
+
+  &__active {
+    color: $vibrantOrangeColor;
+  }
+
+  &:hover {
+    color: $vibrantOrangeColor;
+  }
+}

@@ -1,0 +1,111 @@
+.cart-item-animation-enter {
+  opacity: 0;
+}
+.cart-item-animation-enter-active {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.cart-item-animation-exit {
+  opacity: 1;
+}
+.cart-item-animation-exit-active {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.modal-window--background-enter {
+  opacity: 0;
+}
+
+.modal-window--background-enter-active {
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+
+.modal-window--background-exit {
+  opacity: 1;
+}
+
+.modal-window--background-exit-active {
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.page-enter {
+  opacity: 0;
+  scale: 0.7;
+}
+
+.page-enter-active {
+  opacity: 1;
+  scale: 1;
+  transition:
+    opacity 0.3s,
+    scale 0.3s;
+}
+
+.page-exit {
+  opacity: 1;
+}
+
+.page-exit-active {
+  opacity: 0;
+  transition:
+    opacity 0.3s,
+    scale 0.3s;
+}
+
+.cart-enter {
+  opacity: 0;
+  translate: -20px 0px;
+}
+
+.cart-enter-active {
+  opacity: 1;
+  translate: 0px 0px;
+  transition:
+    opacity 1000ms,
+    translate 1000ms;
+}
+
+.cart-extra-exit {
+  translate: 0px;
+  opacity: 1;
+}
+
+.cart-extra-exit-active {
+  translate: -300px;
+  opacity: 0;
+  transition:
+    scale 300ms,
+    opacity 300ms;
+}
+
+.empty-cart-entering {
+  opacity: 0;
+  transition: opacity 300ms;
+}
+
+.empty-cart-entered {
+  opacity: 1 !important;
+  transition: opacity 300ms;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms;
+}

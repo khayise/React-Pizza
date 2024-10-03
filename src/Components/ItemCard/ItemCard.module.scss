@@ -1,0 +1,48 @@
+@import '../../GlobalSyles/variables.scss';
+
+.card {
+  max-width: 300px;
+  @include flex-col();
+  height: 100%;
+  justify-content: space-between;
+  cursor: pointer;
+
+  .topContainer {
+    @include flex-col();
+  }
+
+  .img {
+    height: 250px;
+    width: 250px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    align-self: center;
+    transition: all 0.1s;
+    &:hover {
+      translate: 0px 3px;
+    }
+  }
+
+  .title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .description {
+    font-size: 14px;
+    color: #868686;
+    margin-bottom: 24px;
+  }
+  .bottomContainer {
+    @include flex-row();
+    justify-content: space-between;
+    align-items: center;
+  }
+  .price {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .orderBtn {
+    @include primaryBtn();
+  }
+}

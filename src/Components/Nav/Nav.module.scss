@@ -1,0 +1,53 @@
+@import '../../GlobalSyles/variables.scss';
+
+.nav {
+  @include flex-row();
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  transition: all 0.2s;
+  padding: 7px 40px;
+  box-sizing: border-box;
+  z-index: 1000;
+
+  &__sticked {
+    position: sticky;
+    top: -1px;
+    background-color: rgba($color: #fff, $alpha: 0.8);
+    backdrop-filter: blur(10px);
+    box-shadow: rgba(6, 5, 50, 0.1) 0px 4px 30px;
+  }
+
+  .leftSide {
+    @include flex-row();
+    justify-content: flex-start;
+    flex: 0.5;
+  }
+
+  .cartBtn {
+    @include primaryBtn();
+    @include flex-row();
+    justify-content: space-between;
+    align-items: center;
+
+    .cartLabel {
+      &__flexed {
+        flex: 1;
+      }
+    }
+  }
+
+  .rightSide {
+    @include flex-row();
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 1;
+  }
+
+  .line {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 1px;
+    height: 24px;
+    border-radius: 12px;
+  }
+}

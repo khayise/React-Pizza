@@ -1,0 +1,44 @@
+@import '../../GlobalSyles/variables.scss';
+
+.container {
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  position: relative;
+  user-select: none;
+  transition: all 0.1s;
+  padding: 5px;
+  &__accepted {
+    // box-shadow: none;
+    border: solid 2px $vibrantOrangeColor;
+  }
+  .img {
+    pointer-events: none;
+    height: 90px;
+    width: 90px;
+  }
+  .title {
+    font-size: 12px;
+  }
+  .price {
+    margin-top: 10px;
+  }
+  .acceptFlag {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 2px;
+    right: 2px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 1200px) {
+  .container {
+    .img {
+      height: 70px;
+      width: 70px;
+    }
+  }
+}
