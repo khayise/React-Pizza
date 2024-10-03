@@ -34,11 +34,20 @@
   }
 }
 
-@media screen and (min-width: 0px) and (max-width: 1200px) {
+@media screen and (min-width: 670px) and (max-width: 1200px) {
   .container {
     .img {
       height: 70px;
       width: 70px;
+    }
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 670px) {
+  .container {
+    .img {
+      height: 50px;
+      width: 50px;
     }
   }
 }

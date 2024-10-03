@@ -21,7 +21,7 @@ export const CartItemExtrasComponent: React.FC<CartItemExtrasProps> = ({ item })
               <li className={style.extraContainer} key={extra.id}>
                 <span className={style.title}>{extra.name}</span>
                 <button onClick={() => dispatch(removeExtraFromCart({ item, extra }))}>
-                  <IoIosClose color="#868686" size="16px" />
+                  <IoIosClose color="#868686" size="24px" />
                 </button>
               </li>
             </CSSTransition>

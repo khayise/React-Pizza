@@ -54,6 +54,8 @@
 @media screen and (min-width: 670px) and (max-width: 950px) {
   .img {
     margin-top: 20px;
+    height: 200px;
+    width: 200px;
   }
   .container {
     .title {
@@ -69,5 +71,16 @@
 @media screen and (min-width: 0px) and (max-width: 670px) {
   .extrasContainer {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .img {
+    margin-left: 20px;
+    height: 150px;
+    width: 150px;
+  }
+  
+  .container {
+    @include flex-col();
+    width: 350px;
   }
 }

@@ -10,6 +10,7 @@
   justify-content: center;
   align-items: center;
   z-index: 2000;
+
   .window {
     position: absolute;
     @include flex-row();
@@ -25,8 +26,9 @@
   }
   .closeBtn {
     position: absolute;
-    height: 20px;
-    width: 20px;
+    height: 32px;
+    width: 32px;
+    color: white;
     transition: all 0.3s;
     &:hover {
       scale: 1.2;
@@ -51,9 +53,11 @@
   }
 }
 
-@media screen and (min-width: 0px) and (max-width: 580px) {
+@media screen and (min-width: 0px) and (max-width: 500px) {
   .background {
     .window {
+      padding: 0px;
+      padding-top: 10px;
       .closeBtn {
         color: $vibrantOrangeColor;
       }

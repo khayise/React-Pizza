@@ -18,13 +18,13 @@ export const Receipt: React.FC<ReceiptProps> = ({}) => {
         {cartItems.map((item) => {
           return (
             <>
-              <div>
+              <div key={item.item.id}>
                 <span className={style.item}>
                   {item.amount}* {item.item.name.toUpperCase()} {item.item.price}$
                 </span>
                 {item.extras.map((extra) => {
                   return (
-                    <span className={style.extra}>
+                    <span key={extra.id} className={style.extra}>
                       <br />
                       &nbsp;&nbsp;&nbsp;&nbsp;
                       {extra.name} {extra.price}$
