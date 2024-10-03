@@ -22,8 +22,8 @@ export interface ITotalPrice {
   finalPrice: number;
 }
 
-export const selectCartTotal = createSelector([cartItems], (cartItems) => {
-  if (!cartItems) return { itemsCost: 0, deliveryCost: 0 };
+export const selectCartTotal = createSelector([cartItems], (cartItems) : ITotalPrice => {
+  if (!cartItems) return { itemsCost: 0, deliveryCost: 0, finalPrice: 0 };
   const DELIVERY_COST_CONSTANT = 3.99;
   const FREE_DELIVERY_TRESHHOLD = 15;
 
@@ -35,8 +35,8 @@ export const selectCartTotal = createSelector([cartItems], (cartItems) => {
   }
 
   const totalPrice: ITotalPrice = {
-    itemsCost,
-    deliveryCost,
+    itemsCost: itemsCost,
+    deliveryCost: deliveryCost,
     finalPrice: itemsCost + deliveryCost,
   };
 

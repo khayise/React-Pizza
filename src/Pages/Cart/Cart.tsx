@@ -8,7 +8,6 @@ import { Transition, TransitionGroup, CSSTransition } from 'react-transition-gro
 import { selectCartTotal } from '../../store/Selectors';
 import style from './Cart.module.scss';
 import { useState } from 'react';
-import TextTransition, { presets } from 'react-text-transition';
 import { Tooltip } from '../../UI/Tooltip/Tooltip';
 import { IoMdInformationCircleOutline } from 'react-icons/io';
 import ScrollReset from '../../Components/ScrollReset/ScrollReset';
@@ -24,7 +23,7 @@ export interface ICartItem {
 const Cart = () => {
   const cartItems: ICartItem[] = UseAppSelector((state) => state.CartSlice.cartItems);
 
-  const { itemsCost, deliveryCost, finalPrice } = UseAppSelector(selectCartTotal);
+  const { itemsCost, finalPrice, deliveryCost,  } = UseAppSelector(selectCartTotal);
   const isEmpty: boolean = cartItems.length ? false : true;
 
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);

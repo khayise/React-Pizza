@@ -3,7 +3,7 @@ import { UseAppSelector, useAppDispatch } from '../../Hook';
 import { selectTotal } from '../../store/Selectors';
 import { addToCart } from '../../store/CartSlice';
 import { ICartItem } from '../../Pages/Cart/Cart';
-import { useGetExtrasQuery, useGetItemsQuery } from '../../store/ItemsApi';
+import { useGetExtrasQuery } from '../../store/ItemsApi';
 import { ExtraCard } from '../ExtraCard/ExtraCard';
 import { ExtraCardSkeleton } from '../ExtraCard/ExtraCardSkeleton';
 
