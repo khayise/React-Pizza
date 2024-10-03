@@ -23,7 +23,7 @@ const ItemCard: React.FC<IItemCardProps> = ({ item, hasExtras }) => {
     setIsActiveModal(false);
     document.body.classList.remove('no-overflow');
   };
-  const handleCardClick = (e: React.MouseEvent<HTMLLIElement>, item: IItem): void => {
+  const handleCardClick = (item: IItem): void => {
     dispatch(clearExtras());
     dispatch(setSelectedItem(item));
     setIsActiveModal(true);
@@ -31,7 +31,7 @@ const ItemCard: React.FC<IItemCardProps> = ({ item, hasExtras }) => {
   };
 
   return (
-    <li ref={cardRef} className={style.card} onClick={(e) => handleCardClick(e, item)}>
+    <li ref={cardRef} className={style.card} onClick={() => handleCardClick( item)}>
       <div className={style.topContainer}>
         <img className={style.img} src={`${item.imageUrl}`} alt="" />
         <div className={style.title}>{item.name}</div>

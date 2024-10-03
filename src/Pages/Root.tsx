@@ -18,7 +18,7 @@ const Root: React.FC = () => {
           unmountOnExit // Удаляет компонент после выхода
           mountOnEnter // Монтирует компонент при входе
         >
-          {(state) => (
+          {() => (
             <div className="page">
               <Header />
               {currentOutlet}

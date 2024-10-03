@@ -1,4 +1,4 @@
-import { createSlice, PayloadAction, createAsyncThunk, Action } from '@reduxjs/toolkit';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 interface initialState {
   activeNav: number | null;

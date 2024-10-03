@@ -1,7 +1,6 @@
-import { createSlice, PayloadAction, createAsyncThunk, Action } from '@reduxjs/toolkit';
+import { createSlice, PayloadAction, createAsyncThunk } from '@reduxjs/toolkit';
 import { IExtra } from '../Pages/Home';
 import axios from 'axios';
-import { isEqual } from 'lodash';
 interface IExtraState {
   extras: IExtra[];
   isLoading: boolean;
